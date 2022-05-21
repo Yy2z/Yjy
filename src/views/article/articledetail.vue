@@ -1,9 +1,9 @@
 <template>
-<Nav />
+<header/>
 <div class="markdown-body" v-html="mdHtml"></div>
 </template>
 <script setup>
-import Nav from '../components/nav.vue'
+import header from '@/components/header.vue'
 import { useRoute} from 'vue-router'
 let Route = useRoute()
 const mdHtml = Route.params.article

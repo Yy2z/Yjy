@@ -16,7 +16,7 @@
 </template>
 <script setup>
 import articlelist from '@/config'
-import Nav from '../components/nav.vue'
+import Nav from '@/components/nav.vue'
 import { ref } from 'vue';
 import { useRoute,useRouter } from 'vue-router'
 let Route = useRoute()
