@@ -12,9 +12,11 @@
 
 .website-footer {
   width: 100%;
+  height: 60px;
   line-height: 2;
   position: relative;
-  padding: 8px 20px;
+  bottom: 0px;
+  flex-grow: 1;
   color: #eee;
   font-size: 14px;
   text-align: center;
@@ -36,17 +38,4 @@
     background-position: 0 50%;
   }
 }
-//   .title {
-//     // color: $text-color-main;
-//     @include common-title();
-//   }
-//   .title,
-//   .info-item {
-//     box-sizing: border-box;
-//   }
-//   .info-item {
-//     padding: 4px;
-//     overflow: hidden;
-//     text-align: center;
-//   }
 </style>

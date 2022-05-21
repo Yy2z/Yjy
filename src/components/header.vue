@@ -21,6 +21,7 @@
 </template>
 <style less scoped>
 header {
+            width: 100%;
             align-items: center;
             gap: 20px;
             border-radius: 10px;
@@ -31,7 +32,7 @@ header {
             z-index: 99;
         }
         .container {
-            width: 1260px;
+            width: 100%;
             height: 48px;
             margin: auto;
            

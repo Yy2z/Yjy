@@ -1,5 +1,5 @@
 <template>
- <Header/>
+
     <div class="k-1dg3ze">
         <div class="k-1dg3ze-imageList">
             <div class="k-1dg3ze-imageBox" v-for="(item,index) of classifylist" @click="tolist(index)" :key="item.id">
@@ -11,7 +11,6 @@
 <script setup>
 import classifylist from '../../config';
 import { useRouter } from 'vue-router'
-import Header from '../../components/header.vue';
 let Router = useRouter()
 const tolist = (index)=>{
     Router.push(`/articlelist?index=${index}`)
@@ -20,15 +19,18 @@ const tolist = (index)=>{
 <style lang="less" scoped>
 .k-1dg3ze {
     position: relative;
-    top: 28px;
-    // width: 100%;
-    height: 1000px;
+    top: 98px;
+    width: 100%;
+    height: 100%;
+    left: 10%;
     // padding: 30px 80px;
     .k-1dg3ze-imageList {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        width: 1000px;
         .k-1dg3ze-imageBox{
+            
             cursor: pointer;
         }
         @media screen and (max-width: 750px) {
