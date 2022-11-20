@@ -1,9 +1,7 @@
 <template>
-<header/>
 <div class="markdown-body" v-html="mdHtml"></div>
 </template>
 <script setup>
-import header from '@/components/header.vue'
 import { useRoute} from 'vue-router'
 let Route = useRoute()
 const mdHtml = Route.params.article

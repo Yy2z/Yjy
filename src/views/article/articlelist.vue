@@ -1,4 +1,5 @@
 <template>
+<div>11</div>
     <Nav :isBac="articlelist[index].path" />
     <div class="k-d20wl8">
         <div class="k-w7hgdo">

@@ -8,7 +8,7 @@
             </div>
             <ul>
                 <li><a href="#">首页</a></li>
-                <li><a href="#">详情</a></li>
+                <li> <router-link to=/photo>相册</router-link> </li>
                 <li><a href="#">更多</a></li>
             </ul>
             <div class="loginbox">

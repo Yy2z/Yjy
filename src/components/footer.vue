@@ -6,8 +6,7 @@
     </a>
   </div>
 </template>
-<script  setup>
-</script>
+
 <style lang="less" scoped>
 
 .website-footer {
@@ -27,6 +26,7 @@
 .website-footer a {
   color: #eee !important;
 }
+
 @keyframes Gradient {
   0% {
     background-position: 0 50%;

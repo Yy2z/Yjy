@@ -1,13 +1,13 @@
 import { createRouter, createWebHashHistory } from "vue-router";
 const routes = [
+    // {
+    //     path: '/',
+    //     redirect: '/home'
+    // },
     {
         path: '/',
-        component: () => import('@/views/home.vue'),
+        component: () => import('../views/home.vue'),
         children: [
-            {
-                path: '/',
-                component: () => import('@/views/article/home.vue'),
-            },
             {
                 name:'articlelist',
                 path: '/articlelist',
@@ -17,19 +17,21 @@ const routes = [
                 name:'articledetail',
                 path: '/articledetail',
                 component: () => import('@/views/article/articledetail.vue'),
-            }
+            },
+            {
+                name:'photo',
+                path: '/photo',
+                component: () => import('../views/photo/index.vue'),
+            },
         ]
 
     }
 ]
-export default createRouter({
-    routes,
+// 哈希路由
+const router = createRouter({
+    // 路由模式
     history: createWebHashHistory(),
-    scrollBehavior(to, from, savedPosition) {
-        if (savedPosition) {
-            return savedPosition
-        } else {
-            return { top: 0 }
-        }
-    }
+    routes,
 })
+
+export default router;
