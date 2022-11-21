@@ -1,6 +1,5 @@
  import { createApp } from 'vue'
 import App from './App.vue'
-import 'amfe-flexible/index.js'
 import router from './router'
 import ElementPlus from 'element-plus';
 import 'element-plus/dist/index.css';

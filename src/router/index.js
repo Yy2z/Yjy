@@ -9,16 +9,6 @@ const routes = [
         component: () => import('../views/home.vue'),
         children: [
             {
-                name:'articlelist',
-                path: '/articlelist',
-                component: () => import('@/views/article/articlelist.vue'),
-            },
-            {
-                name:'articledetail',
-                path: '/articledetail',
-                component: () => import('@/views/article/articledetail.vue'),
-            },
-            {
                 name:'photo',
                 path: '/photo',
                 component: () => import('../views/photo/index.vue'),
