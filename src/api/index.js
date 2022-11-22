@@ -5,6 +5,20 @@ const request = axios.create({
     baseURL: "http://api.cpengx.cn/metashop/api",
 })
 
+// 响应拦截器
+request.interceptors.response.use(
+    (response) => {
+    if (response.status == 200) {
+        return response.data;
+    } else {
+        return response;
+    }
+   },
+    function (error) {
+    return Promise.reject(error);
+    }
+  );
+  
 export const getHomepage = (params) => {
     return request({
         method:"GET",
@@ -14,12 +28,4 @@ export const getHomepage = (params) => {
     })
 }
 
-// 添加响应拦截器
-request.interceptors.response.use(function (response) {
-    // 对响应数据做点什么
-    return response.data;
-  }, function (error) {
-    // 对响应错误做点什么
-    return Promise.reject(error);
-  });
-  
+

@@ -7,14 +7,6 @@ const routes = [
     {
         path: '/',
         component: () => import('../views/home.vue'),
-        children: [
-            {
-                name:'photo',
-                path: '/photo',
-                component: () => import('../views/photo/index.vue'),
-            },
-        ]
-
     }
 ]
 // 哈希路由
