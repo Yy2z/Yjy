@@ -1,25 +1,22 @@
 <template>
- <div>chshi</div>
- <p>123</p>
-</template>
+    <div class="common-layout">
+      <el-container>
+        <el-header><Header></Header></el-header>
+        <el-main><router-view></router-view></el-main>
+        <el-footer><Footer></Footer></el-footer>
+      </el-container>
+    </div>
+  </template>
 <script setup>
-import * as api from "../api/index";
-import { onMounted } from "vue";
 
-onMounted(async () => {
-    let result = await api.getHomepage();
-    console.log(result);
-})
+import Footer from "../components/footer.vue"
+import Header from "../components/header.vue"
 
-// let name = "hh"
-// let age = "12"
-
-// sayhello(()=> {
-// console.log('我叫${name},我${age}岁了')
-// }) 
-
-// sayhello()
 </script>
 
-<style lang="less" scoped>
+<style lang="scss" scoped>
+* {
+    padding: 0;
+    margin: 0;
+}
 </style>
