@@ -9,11 +9,10 @@
     >
       <el-menu-item index="/one">LOGO</el-menu-item>
       <div class="flex-grow" />
-      <el-menu-item index="/one">首页</el-menu-item>
       <el-sub-menu index="2">
-        <template #title>更多</template>
+        <template #title>more</template>
         <el-menu-item index="/one">item one</el-menu-item>
-        <el-menu-item index="/two">item two</el-menu-item>
+        <el-menu-item index="/photo">photo</el-menu-item>
         <el-sub-menu index="/three">
           <template #title>item four</template>
           <el-menu-item index="2-4-1">item one</el-menu-item>
