@@ -1,8 +1,5 @@
 <template>
-
-
   <!-- 卡片 -->
-
   <el-row>
     <el-col
       v-for="(o, index) in 4"

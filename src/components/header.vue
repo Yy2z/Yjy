@@ -7,7 +7,7 @@
       @select="handleSelect"
       router
     >
-      <el-menu-item index="/one">LOGO</el-menu-item>
+      <el-menu-item index="/">LOGO</el-menu-item>
       <div class="flex-grow" />
       <el-sub-menu index="2">
         <template #title>more</template>
