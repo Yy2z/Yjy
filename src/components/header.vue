@@ -15,9 +15,7 @@
         <el-menu-item index="/photo">photo</el-menu-item>
         <el-sub-menu index="/three">
           <template #title>item four</template>
-          <el-menu-item index="2-4-1">item one</el-menu-item>
-          <el-menu-item index="2-4-2">item two</el-menu-item>
-          <el-menu-item index="2-4-3">item three</el-menu-item>
+          <el-menu-item index="/three">item one</el-menu-item>
         </el-sub-menu>
       </el-sub-menu>
     </el-menu>
