@@ -1,5 +1,6 @@
 <template>
   <div>1</div>
+  <div>2</div>
   <div class="relative w-screen h-screen">
   <div class="noise-marble w-screen h-screen bg-blue-grad-4"></div>
   </div>

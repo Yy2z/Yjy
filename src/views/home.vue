@@ -12,12 +12,17 @@
     <el-col :span="6"><div>111</div></el-col>
     <button labs-button>Button</button>
   </el-row>
+  <el-row>
+    <el-col :span="6"><div>111</div></el-col>
+    <el-col :span="6"><div>111</div></el-col>
+    <el-col :span="6"><div>111</div></el-col>
+    <el-col :span="6"><div>111</div></el-col>
+    <button labs-button>Button</button>
+  </el-row>
 </template>
 
 <script setup>
 
-// import Footer from "../components/footer.vue"
-// import Header from "../components/header.vue"
 import {watch} from 'vue'
 // "use strict";
 const [button] = document.querySelectorAll("[labs-button]");
