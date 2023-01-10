@@ -8,24 +8,7 @@
     <el-col :span="6"><div>111</div></el-col>
   
   </el-row>
-  <el-row>
-    <el-col :span="6"><div>111</div></el-col>
-    <el-col :span="6"><div>111</div></el-col>
-    <el-col :span="6"><div>  <div>
-        <div class="loginbox">
-          <a href="https://www.pexels.com/zh-cn/" class="btn">进入</a>
-        </div>
-      </div>111</div></el-col>
-    <el-col :span="6"><div>111</div></el-col>
-    <button labs-button>Button</button>
-  </el-row>
-  <el-row>
-    <el-col :span="6"><div>111</div></el-col>
-    <el-col :span="6"><div>111</div></el-col>
-    <el-col :span="6"><div>111</div></el-col>
-    <el-col :span="6"><div>111</div></el-col>
-    <button labs-button>Button</button>
-  </el-row>
+ 
 </template>
 
 <script setup>
